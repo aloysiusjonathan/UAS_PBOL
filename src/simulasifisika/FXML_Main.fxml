@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="simulasifisika.FXML_MainController">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" height="400.0" stroke="BLACK" strokeType="INSIDE" width="600.0" />
+      <MenuBar prefHeight="25.0" prefWidth="600.0">
+        <menus>
+          <Menu mnemonicParsing="false" text="Master">
+            <items>
+              <MenuItem fx:id="player" mnemonicParsing="false" onAction="#playerc" text="Player" />
+                  <MenuItem fx:id="terrain" mnemonicParsing="false" onAction="#terrainc" text="Terrain" />
+                  <MenuItem fx:id="weather" mnemonicParsing="false" onAction="#weatherc" text="Weather" />
+            </items>
+          </Menu>
+            <Menu mnemonicParsing="false" text="Wearable">
+               <items>
+                  <MenuItem fx:id="outfit" mnemonicParsing="false" onAction="#outfitc" text="Outfit" />
+                  <MenuItem fx:id="shoe" mnemonicParsing="false" onAction="#shoec" text="Shoe" />
+                  <MenuItem fx:id="bag" mnemonicParsing="false" onAction="#bagc" text="Bag" />
+               </items>
+            </Menu>
+          <Menu mnemonicParsing="false" text="Display">
+            <items>
+                  <MenuItem fx:id="dplayer" mnemonicParsing="false" onAction="#dplayerc" text="Player" />
+                  <MenuItem fx:id="dterrain" mnemonicParsing="false" onAction="#dterrainc" text="Terrain" />
+                  <MenuItem fx:id="dweather" mnemonicParsing="false" onAction="#dweatherc" text="Weather" />
+                  <MenuItem fx:id="doutfit" mnemonicParsing="false" onAction="#doutfitc" text="Outfit" />
+                  <MenuItem fx:id="dshoe" mnemonicParsing="false" onAction="#dshoec" text="Shoe" />
+                  <MenuItem fx:id="dbag" mnemonicParsing="false" onAction="#dbagc" text="Bag" />
+            </items>
+          </Menu>
+            <Menu mnemonicParsing="false" text="Calculate">
+               <items>
+                  <MenuItem fx:id="calculate" mnemonicParsing="false" onAction="#calculatec" text="Calculate" />
+               </items></Menu>
+            <Menu mnemonicParsing="false" text="Exit">
+               <items>
+                  <MenuItem fx:id="exit" mnemonicParsing="false" onAction="#exitc" text="Exit" />
+               </items></Menu>
+        </menus>
+      </MenuBar>
+   </children>
+</AnchorPane>

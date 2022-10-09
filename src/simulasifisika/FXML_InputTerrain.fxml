@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="simulasifisika.FXML_InputTerrainController">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#eec79a" height="350.0" layoutY="50.0" stroke="TRANSPARENT" strokeType="INSIDE" width="600.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ffe8cc" height="300.0" layoutX="100.0" layoutY="75.0" stroke="BLACK" strokeType="INSIDE" width="400.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" height="50.0" stroke="BLACK" strokeType="INSIDE" width="600.0" />
+      <Label fx:id="lslope" layoutX="419.0" layoutY="232.0" text="0" />
+      <Label layoutX="179.0" layoutY="196.0" text="T.Name :">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="179.0" layoutY="164.0" text="Terrain ID :">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="179.0" layoutY="270.0" text="Gravity :">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Slider fx:id="slope" blockIncrement="5.0" layoutX="274.0" layoutY="232.0" majorTickUnit="15.0" max="45.0" min="-45.0" minorTickCount="0" prefHeight="34.0" prefWidth="140.0" showTickLabels="true" showTickMarks="true" snapToTicks="true" />
+      <Slider fx:id="gravity" blockIncrement="1.0" layoutX="274.0" layoutY="277.0" max="10.0" />
+      <Label layoutX="179.0" layoutY="234.0" text="Slope Lv. :">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="lgravity" layoutX="419.0" layoutY="275.0" text="0" />
+      <TextField fx:id="tid" layoutX="274.0" layoutY="165.0" prefHeight="25.0" prefWidth="140.0" promptText="Max 3 character" />
+      <Label layoutX="163.0" layoutY="8.0" text="Walking (Physics) Simulator" textFill="WHITE">
+         <font>
+            <Font size="23.0" />
+         </font>
+      </Label>
+      <Button fx:id="close" layoutX="526.0" layoutY="13.0" mnemonicParsing="false" onAction="#closec" text="Close [X]" />
+      <Button fx:id="reset" layoutX="329.0" layoutY="336.0" mnemonicParsing="false" onAction="#resetc" text="Reset" />
+      <Button fx:id="save" layoutX="395.0" layoutY="336.0" mnemonicParsing="false" onAction="#savec" text="Save" />
+      <Label layoutX="279.0" layoutY="340.0" text="\%" />
+      <Button fx:id="geffect" layoutX="145.0" layoutY="336.0" mnemonicParsing="false" onAction="#geffectc" text="Get Effect" />
+      <TextField fx:id="teffect" layoutX="226.0" layoutY="336.0" prefHeight="25.0" prefWidth="51.0" promptText="Effect" />
+      <ComboBox fx:id="tname" layoutX="274.0" layoutY="197.0" prefHeight="25.0" prefWidth="140.0" promptText="Select..." />
+   </children>
+</AnchorPane>

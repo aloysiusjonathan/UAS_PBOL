@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.shape.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="simulasifisika.FXML_ChoosePlayerController">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" height="400.0" stroke="BLACK" strokeType="INSIDE" width="600.0" />
+      <ComboBox fx:id="field" layoutX="14.0" layoutY="14.0" prefWidth="150.0" />
+      <Button fx:id="top" layoutX="14.0" layoutY="361.0" mnemonicParsing="false" onAction="#topc" text="Top" />
+      <Button fx:id="choose" layoutX="453.0" layoutY="14.0" mnemonicParsing="false" onAction="#choosec" text="Choose" />
+      <TableView fx:id="tplayer" layoutY="53.0" prefHeight="294.0" prefWidth="600.0">
+         <columns>
+            <TableColumn prefWidth="75.0" text="C1" />
+            <TableColumn prefWidth="75.0" text="C2" />
+         </columns>
+      </TableView>
+      <TextField fx:id="search" layoutX="203.0" layoutY="14.0" />
+      <Button fx:id="cancel" layoutX="518.0" layoutY="14.0" mnemonicParsing="false" onAction="#cancelc" text="Cancel [X]" />
+      <Button fx:id="bsearch" layoutX="392.0" layoutY="14.0" mnemonicParsing="false" onAction="#searchc" text="Search" />
+      <Button fx:id="nxt" layoutX="354.0" layoutY="361.0" mnemonicParsing="false" onAction="#nxtc" text="Next" />
+      <Button fx:id="bot" layoutX="553.0" layoutY="361.0" mnemonicParsing="false" onAction="#botc" text="Bot" />
+      <Button fx:id="prev" layoutX="205.0" layoutY="361.0" mnemonicParsing="false" onAction="#prevc" text="Prev" />
+   </children>
+</AnchorPane>

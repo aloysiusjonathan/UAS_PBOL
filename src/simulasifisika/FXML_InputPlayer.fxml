@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="simulasifisika.FXML_InputPlayerController">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" height="50.0" stroke="BLACK" strokeType="INSIDE" width="600.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#a4d3cc" height="350.0" layoutY="50.0" stroke="TRANSPARENT" strokeType="INSIDE" width="600.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ccfff8" height="300.0" layoutX="100.0" layoutY="75.0" stroke="BLACK" strokeType="INSIDE" width="400.0" />
+      <Label fx:id="lhunger" layoutX="432.0" layoutY="276.0" text="0" />
+      <Label fx:id="lage" layoutX="432.0" layoutY="185.0" text="0" />
+      <Label fx:id="lweight" layoutX="432.0" layoutY="155.0" text="0" />
+      <Button fx:id="save" layoutX="395.0" layoutY="336.0" mnemonicParsing="false" onAction="#savec" text="Save" />
+      <Button fx:id="reset" layoutX="329.0" layoutY="336.0" mnemonicParsing="false" onAction="#resetc" text="Reset" />
+      <Slider fx:id="hunger" layoutX="281.0" layoutY="278.0" max="10.0" min="1.0" />
+      <Label layoutX="146.0" layoutY="271.0" text="Hunger :">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="mood" layoutX="281.0" layoutY="242.0" prefHeight="25.0" prefWidth="140.0" promptText="Select..." />
+      <Label layoutX="146.0" layoutY="241.0" text="Mood :">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="146.0" layoutY="209.0" text="Health Status :">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="mstat" layoutX="281.0" layoutY="210.0" prefHeight="25.0" prefWidth="140.0" promptText="Select..." />
+      <Slider fx:id="age" layoutX="281.0" layoutY="186.0" max="79.0" min="20.0" />
+      <Label layoutX="146.0" layoutY="179.0" text="Age :">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="146.0" layoutY="149.0" text="Weight (kg) :">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Slider fx:id="weight" blockIncrement="1.0" layoutX="281.0" layoutY="156.0" min="40.0" />
+      <TextField fx:id="name" layoutX="281.0" layoutY="120.0" prefHeight="25.0" prefWidth="140.0" promptText="Max 30 characters" />
+      <Label layoutX="146.0" layoutY="119.0" text="Name :">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="id" layoutX="281.0" layoutY="90.0" prefHeight="25.0" prefWidth="140.0" promptText="Max 3 characters" />
+      <Label layoutX="146.0" layoutY="89.0" text="ID :">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Button fx:id="close" layoutX="526.0" layoutY="13.0" mnemonicParsing="false" onAction="#closec" text="Close [X]" />
+      <TextField fx:id="speed" layoutX="226.0" layoutY="336.0" prefHeight="25.0" prefWidth="51.0" promptText="Speed" />
+      <Label layoutX="163.0" layoutY="8.0" text="Walking (Physics) Simulator" textFill="WHITE">
+         <font>
+            <Font size="23.0" />
+         </font>
+      </Label>
+      <Button fx:id="gspeed" layoutX="145.0" layoutY="336.0" mnemonicParsing="false" onAction="#gspeedc" text="Get Speed" />
+      <Label layoutX="279.0" layoutY="340.0" text="km/h" />
+      <ToggleButton fx:id="atlet" layoutX="146.0" layoutY="301.0" mnemonicParsing="false" text="Atletic" />
+      <Label layoutX="199.0" layoutY="304.0" text="&lt;- (Toggle to activate)" />
+   </children>
+</AnchorPane>

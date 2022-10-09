@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="simulasifisika.FXML_InputWeatherController">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#acacff" height="350.0" layoutY="50.0" stroke="TRANSPARENT" strokeType="INSIDE" width="600.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#cfcfff" height="300.0" layoutX="100.0" layoutY="75.0" stroke="BLACK" strokeType="INSIDE" width="400.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" height="50.0" stroke="BLACK" strokeType="INSIDE" width="600.0" />
+      <Label fx:id="lwspeed" layoutX="443.0" layoutY="233.0" text="0" />
+      <Slider fx:id="wdir" layoutX="299.0" layoutY="264.0" majorTickUnit="1.0" max="1.0" min="-1.0" minorTickCount="0" snapToTicks="true" />
+      <Label layoutX="151.0" layoutY="197.0" text="W.Name :">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="wid" layoutX="299.0" layoutY="168.0" prefHeight="25.0" prefWidth="140.0" promptText="Max 3 characters" />
+      <Label layoutX="151.0" layoutY="167.0" text="Weather ID :">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Slider fx:id="wspeed" layoutX="299.0" layoutY="234.0" majorTickUnit="10.0" minorTickCount="0" snapToTicks="true" />
+      <Label layoutX="151.0" layoutY="227.0" text="Wind Spd (km/h):">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="151.0" layoutY="257.0" text="Wind Direction :">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="lwdir" layoutX="366.0" layoutY="284.0" text="0" />
+      <Button fx:id="close" layoutX="526.0" layoutY="13.0" mnemonicParsing="false" onAction="#closec" text="Close [X]" />
+      <Label layoutX="163.0" layoutY="8.0" text="Walking (Physics) Simulator" textFill="WHITE">
+         <font>
+            <Font size="23.0" />
+         </font>
+      </Label>
+      <TextField fx:id="weffect" layoutX="226.0" layoutY="336.0" prefHeight="25.0" prefWidth="51.0" promptText="Effect" />
+      <Button fx:id="geffect" layoutX="145.0" layoutY="336.0" mnemonicParsing="false" onAction="#geffectc" text="Get Effect" />
+      <Label layoutX="279.0" layoutY="340.0" text="\%" />
+      <Button fx:id="save" layoutX="395.0" layoutY="336.0" mnemonicParsing="false" onAction="#savec" text="Save" />
+      <Button fx:id="reset" layoutX="329.0" layoutY="336.0" mnemonicParsing="false" onAction="#resetc" text="Reset" />
+      <ComboBox fx:id="wname" layoutX="299.0" layoutY="198.0" prefHeight="25.0" prefWidth="140.0" promptText="Select..." />
+      <Label layoutX="294.0" layoutY="284.0" text="&gt;&lt;" />
+      <Label layoutX="428.0" layoutY="284.0" text="&gt;&gt;" />
+      <Label layoutX="147.0" layoutY="309.0" text="*wind direction cannot set to '0' if wind speed is set above 0." />
+   </children>
+</AnchorPane>

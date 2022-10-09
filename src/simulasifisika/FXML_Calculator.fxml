@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="simulasifisika.FXML_CalculatorController">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#686868" height="350.0" layoutY="50.0" stroke="TRANSPARENT" strokeType="INSIDE" width="600.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#c3c3c3" height="300.0" layoutX="100.0" layoutY="75.0" stroke="BLACK" strokeType="INSIDE" width="400.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" height="50.0" stroke="BLACK" strokeType="INSIDE" width="600.0" />
+      <Label layoutX="279.0" layoutY="340.0" text="km/h" />
+      <Button fx:id="gspeed" layoutX="145.0" layoutY="336.0" mnemonicParsing="false" onAction="#gspeedc" text="Get Speed" />
+      <Label layoutX="163.0" layoutY="8.0" text="Walking (Physics) Simulator" textFill="WHITE">
+         <font>
+            <Font size="23.0" />
+         </font>
+      </Label>
+      <TextField fx:id="speed" layoutX="226.0" layoutY="336.0" prefHeight="25.0" prefWidth="51.0" promptText="Speed" />
+      <Button fx:id="close" layoutX="526.0" layoutY="13.0" mnemonicParsing="false" onAction="#closec" text="Close [X]" />
+      <Label layoutX="172.0" layoutY="111.0" text="Player Speed :">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="pid" layoutX="334.0" layoutY="114.0" prefHeight="25.0" prefWidth="99.0" promptText="Player Speed" />
+      <Label layoutX="172.0" layoutY="141.0" text="Terrain FX :">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="172.0" layoutY="171.0" text="Weather FX :">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="172.0" layoutY="201.0" text="Outfit FX :">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="172.0" layoutY="231.0" text="Shoe FX :">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="172.0" layoutY="263.0" text="Bag Weight :">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Button fx:id="reset" layoutX="388.0" layoutY="336.0" mnemonicParsing="false" onAction="#resetc" text="Reset" />
+      <Button fx:id="gpid" layoutX="292.0" layoutY="113.0" mnemonicParsing="false" onAction="#gpidc" text="Get" />
+      <Button fx:id="gtid" layoutX="292.0" layoutY="143.0" mnemonicParsing="false" onAction="#gtidc" text="Get" />
+      <TextField fx:id="tid" layoutX="334.0" layoutY="144.0" prefHeight="25.0" prefWidth="99.0" promptText="Terrain Effect" />
+      <TextField fx:id="oid" layoutX="334.0" layoutY="205.0" prefHeight="25.0" prefWidth="99.0" promptText="Outfit Effect" />
+      <Button fx:id="goid" layoutX="292.0" layoutY="204.0" mnemonicParsing="false" onAction="#goidc" text="Get" />
+      <Button fx:id="gwid" layoutX="292.0" layoutY="174.0" mnemonicParsing="false" onAction="#gwidc" text="Get" />
+      <TextField fx:id="wid" layoutX="334.0" layoutY="175.0" prefHeight="25.0" prefWidth="99.0" promptText="Weather Effect" />
+      <TextField fx:id="bid" layoutX="334.0" layoutY="265.0" prefHeight="25.0" prefWidth="99.0" promptText="Bag Weight" />
+      <Button fx:id="gbid" layoutX="292.0" layoutY="264.0" mnemonicParsing="false" onAction="#gbidc" text="Get" />
+      <Button fx:id="gsid" layoutX="292.0" layoutY="234.0" mnemonicParsing="false" onAction="#gsidc" text="Get" />
+      <TextField fx:id="sid" layoutX="334.0" layoutY="235.0" prefHeight="25.0" prefWidth="99.0" promptText="Shoe Effect" />
+      <Label layoutX="145.0" layoutY="309.0" text="Total Player Speed :">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

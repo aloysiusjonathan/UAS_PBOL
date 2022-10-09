@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="simulasifisika.FXML_InputShoeController">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#c9f8a9" height="350.0" layoutY="50.0" stroke="TRANSPARENT" strokeType="INSIDE" width="600.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#e3ffd1" height="300.0" layoutX="100.0" layoutY="75.0" stroke="BLACK" strokeType="INSIDE" width="400.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" height="50.0" stroke="BLACK" strokeType="INSIDE" width="600.0" />
+      <ComboBox fx:id="sname" layoutX="287.0" layoutY="197.0" prefHeight="25.0" prefWidth="140.0" promptText="Select..." />
+      <Button fx:id="close" layoutX="526.0" layoutY="13.0" mnemonicParsing="false" onAction="#closec" text="Close [X]" />
+      <Label layoutX="163.0" layoutY="8.0" text="Walking (Physics) Simulator" textFill="WHITE">
+         <font>
+            <Font size="23.0" />
+         </font>
+      </Label>
+      <TextField fx:id="seffect" layoutX="226.0" layoutY="336.0" prefHeight="25.0" prefWidth="51.0" promptText="Effect" />
+      <Button fx:id="geffect" layoutX="145.0" layoutY="336.0" mnemonicParsing="false" onAction="#geffectc" text="Get Effect" />
+      <Label layoutX="279.0" layoutY="340.0" text="\%" />
+      <Button fx:id="save" layoutX="395.0" layoutY="336.0" mnemonicParsing="false" onAction="#savec" text="Save" />
+      <Button fx:id="reset" layoutX="329.0" layoutY="336.0" mnemonicParsing="false" onAction="#resetc" text="Reset" />
+      <Label layoutX="178.0" layoutY="227.0" text="Shoe ID :">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="178.0" layoutY="196.0" text="S.Name :">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="sid" layoutX="347.0" layoutY="229.0" prefHeight="25.0" prefWidth="80.0" promptText="ID" />
+      <Button fx:id="gid" layoutX="287.0" layoutY="229.0" mnemonicParsing="false" onAction="#gidc" text="Get ID" />
+   </children>
+</AnchorPane>

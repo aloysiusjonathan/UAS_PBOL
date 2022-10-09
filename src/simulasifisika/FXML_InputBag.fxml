@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="150.0" prefWidth="298.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="simulasifisika.FXML_InputBagController">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" height="50.0" layoutY="-4.0" stroke="BLACK" strokeType="INSIDE" width="600.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#f2a2f2" height="350.0" layoutY="46.0" stroke="TRANSPARENT" strokeType="INSIDE" width="600.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ffd1ff" height="300.0" layoutX="100.0" layoutY="71.0" stroke="BLACK" strokeType="INSIDE" width="400.0" />
+      <Label layoutX="169.0" layoutY="208.0" text="Bag ID :">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="169.0" layoutY="175.0" text="B.Name :">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Button fx:id="save" layoutX="377.0" layoutY="330.0" mnemonicParsing="false" onAction="#savec" text="Save" />
+      <TextField fx:id="bid" layoutX="338.0" layoutY="210.0" prefHeight="25.0" prefWidth="80.0" promptText="ID" />
+      <Button fx:id="close" layoutX="526.0" layoutY="9.0" mnemonicParsing="false" onAction="#closec" text="Close [X]" />
+      <Label layoutX="163.0" layoutY="4.0" text="Walking (Physics) Simulator" textFill="WHITE">
+         <font>
+            <Font size="23.0" />
+         </font>
+      </Label>
+      <Button fx:id="reset" layoutX="311.0" layoutY="330.0" mnemonicParsing="false" onAction="#resetc" text="Reset" />
+      <ComboBox fx:id="bname" layoutX="278.0" layoutY="176.0" prefHeight="25.0" prefWidth="140.0" promptText="Select..." />
+      <Label layoutX="169.0" layoutY="240.0" text="Bag Weight :">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Slider fx:id="bweight" layoutX="278.0" layoutY="247.0" max="23.0" />
+      <Label fx:id="lbweight" layoutX="424.0" layoutY="246.0" text="0" />
+      <Button fx:id="gid" layoutX="278.0" layoutY="210.0" mnemonicParsing="false" onAction="#gidc" text="Get ID" />
+   </children>
+</AnchorPane>
