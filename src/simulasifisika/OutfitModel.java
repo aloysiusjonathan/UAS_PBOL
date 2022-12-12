@@ -8,6 +8,24 @@ public class OutfitModel {
 
     private String outfit_id, outfit_name;
     private float outfit_effect;
+    String o;
+    float oe;
+
+    public float getOe() {
+        return oe;
+    }
+
+    public void setOe(float oe) {
+        this.oe = oe;
+    }
+
+    public String getO() {
+        return o;
+    }
+
+    public void setO(String o) {
+        this.o = o;
+    }
 
     public String getOutfit_id() {
         return outfit_id;

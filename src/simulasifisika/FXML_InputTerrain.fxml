@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.image.*?>
 <?import javafx.scene.shape.*?>
 <?import javafx.scene.text.*?>
 <?import java.lang.*?>
@@ -38,11 +39,6 @@
       </Label>
       <Label fx:id="lgravity" layoutX="419.0" layoutY="275.0" text="0" />
       <TextField fx:id="tid" layoutX="274.0" layoutY="165.0" prefHeight="25.0" prefWidth="140.0" promptText="Max 3 character" />
-      <Label layoutX="163.0" layoutY="8.0" text="Walking (Physics) Simulator" textFill="WHITE">
-         <font>
-            <Font size="23.0" />
-         </font>
-      </Label>
       <Button fx:id="close" layoutX="526.0" layoutY="13.0" mnemonicParsing="false" onAction="#closec" text="Close [X]" />
       <Button fx:id="reset" layoutX="329.0" layoutY="336.0" mnemonicParsing="false" onAction="#resetc" text="Reset" />
       <Button fx:id="save" layoutX="395.0" layoutY="336.0" mnemonicParsing="false" onAction="#savec" text="Save" />
@@ -50,5 +46,10 @@
       <Button fx:id="geffect" layoutX="145.0" layoutY="336.0" mnemonicParsing="false" onAction="#geffectc" text="Get Effect" />
       <TextField fx:id="teffect" layoutX="226.0" layoutY="336.0" prefHeight="25.0" prefWidth="51.0" promptText="Effect" />
       <ComboBox fx:id="tname" layoutX="274.0" layoutY="197.0" prefHeight="25.0" prefWidth="140.0" promptText="Select..." />
+      <ImageView fitHeight="76.0" fitWidth="392.0" layoutX="105.0" layoutY="2.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Image/Title.png" />
+         </image>
+      </ImageView>
    </children>
 </AnchorPane>

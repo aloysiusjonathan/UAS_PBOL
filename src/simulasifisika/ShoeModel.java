@@ -7,6 +7,24 @@ package simulasifisika;
 public class ShoeModel {
     private String shoe_id, shoe_name;
     private float shoe_effect;
+    String s;
+    float se;
+
+    public float getSe() {
+        return se;
+    }
+
+    public void setSe(float se) {
+        this.se = se;
+    }
+
+    public String getS() {
+        return s;
+    }
+
+    public void setS(String s) {
+        this.s = s;
+    }
 
     public String getShoe_id() {
         return shoe_id;

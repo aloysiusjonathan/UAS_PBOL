@@ -69,7 +69,6 @@ public class FXML_MainController implements Initializable {
             Parent root = (Parent) loader.load();
             Scene scene = new Scene(root);
             Stage stg = new Stage();
-            stg.initModality(Modality.APPLICATION_MODAL);
             stg.setResizable(false);
             stg.setIconified(false);
             stg.setScene(scene);
@@ -86,7 +85,6 @@ public class FXML_MainController implements Initializable {
             Parent root = (Parent) loader.load();
             Scene scene = new Scene(root);
             Stage stg = new Stage();
-            stg.initModality(Modality.APPLICATION_MODAL);
             stg.setResizable(false);
             stg.setIconified(false);
             stg.setScene(scene);
@@ -103,7 +101,6 @@ public class FXML_MainController implements Initializable {
             Parent root = (Parent) loader.load();
             Scene scene = new Scene(root);
             Stage stg = new Stage();
-            stg.initModality(Modality.APPLICATION_MODAL);
             stg.setResizable(false);
             stg.setIconified(false);
             stg.setScene(scene);
@@ -120,7 +117,6 @@ public class FXML_MainController implements Initializable {
             Parent root = (Parent) loader.load();
             Scene scene = new Scene(root);
             Stage stg = new Stage();
-            stg.initModality(Modality.APPLICATION_MODAL);
             stg.setResizable(false);
             stg.setIconified(false);
             stg.setScene(scene);
@@ -137,7 +133,6 @@ public class FXML_MainController implements Initializable {
             Parent root = (Parent) loader.load();
             Scene scene = new Scene(root);
             Stage stg = new Stage();
-            stg.initModality(Modality.APPLICATION_MODAL);
             stg.setResizable(false);
             stg.setIconified(false);
             stg.setScene(scene);
@@ -154,7 +149,6 @@ public class FXML_MainController implements Initializable {
             Parent root = (Parent) loader.load();
             Scene scene = new Scene(root);
             Stage stg = new Stage();
-            stg.initModality(Modality.APPLICATION_MODAL);
             stg.setResizable(false);
             stg.setIconified(false);
             stg.setScene(scene);
@@ -171,7 +165,6 @@ public class FXML_MainController implements Initializable {
             Parent root = (Parent) loader.load();
             Scene scene = new Scene(root);
             Stage stg = new Stage();
-            stg.initModality(Modality.APPLICATION_MODAL);
             stg.setResizable(false);
             stg.setIconified(false);
             stg.setScene(scene);
@@ -188,7 +181,6 @@ public class FXML_MainController implements Initializable {
             Parent root = (Parent) loader.load();
             Scene scene = new Scene(root);
             Stage stg = new Stage();
-            stg.initModality(Modality.APPLICATION_MODAL);
             stg.setResizable(false);
             stg.setIconified(false);
             stg.setScene(scene);
@@ -205,7 +197,6 @@ public class FXML_MainController implements Initializable {
             Parent root = (Parent) loader.load();
             Scene scene = new Scene(root);
             Stage stg = new Stage();
-            stg.initModality(Modality.APPLICATION_MODAL);
             stg.setResizable(false);
             stg.setIconified(false);
             stg.setScene(scene);
@@ -222,7 +213,6 @@ public class FXML_MainController implements Initializable {
             Parent root = (Parent) loader.load();
             Scene scene = new Scene(root);
             Stage stg = new Stage();
-            stg.initModality(Modality.APPLICATION_MODAL);
             stg.setResizable(false);
             stg.setIconified(false);
             stg.setScene(scene);
@@ -239,7 +229,6 @@ public class FXML_MainController implements Initializable {
             Parent root = (Parent) loader.load();
             Scene scene = new Scene(root);
             Stage stg = new Stage();
-            stg.initModality(Modality.APPLICATION_MODAL);
             stg.setResizable(false);
             stg.setIconified(false);
             stg.setScene(scene);
@@ -256,7 +245,6 @@ public class FXML_MainController implements Initializable {
             Parent root = (Parent) loader.load();
             Scene scene = new Scene(root);
             Stage stg = new Stage();
-            stg.initModality(Modality.APPLICATION_MODAL);
             stg.setResizable(false);
             stg.setIconified(false);
             stg.setScene(scene);
@@ -278,7 +266,6 @@ public class FXML_MainController implements Initializable {
             Parent root = (Parent) loader.load();
             Scene scene = new Scene(root);
             Stage stg = new Stage();
-            stg.initModality(Modality.APPLICATION_MODAL);
             stg.setResizable(false);
             stg.setIconified(false);
             stg.setScene(scene);

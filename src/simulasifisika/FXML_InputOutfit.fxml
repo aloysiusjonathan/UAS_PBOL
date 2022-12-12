@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.image.*?>
 <?import javafx.scene.shape.*?>
 <?import javafx.scene.text.*?>
 <?import java.lang.*?>
@@ -29,13 +30,13 @@
       <Label layoutX="279.0" layoutY="340.0" text="\%" />
       <Button fx:id="geffect" layoutX="145.0" layoutY="336.0" mnemonicParsing="false" onAction="#geffectc" text="Get Effect" />
       <TextField fx:id="oeffect" layoutX="226.0" layoutY="336.0" prefHeight="25.0" prefWidth="51.0" promptText="Effect" />
-      <Label layoutX="163.0" layoutY="8.0" text="Walking (Physics) Simulator" textFill="WHITE">
-         <font>
-            <Font size="23.0" />
-         </font>
-      </Label>
       <Button fx:id="close" layoutX="526.0" layoutY="13.0" mnemonicParsing="false" onAction="#closec" text="Close [X]" />
       <ComboBox fx:id="oname" layoutX="287.0" layoutY="202.0" prefHeight="25.0" prefWidth="140.0" promptText="Select..." />
       <Button fx:id="gid" layoutX="287.0" layoutY="234.0" mnemonicParsing="false" onAction="#gidc" text="Get ID" />
+      <ImageView fitHeight="76.0" fitWidth="392.0" layoutX="105.0" layoutY="2.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Image/Title.png" />
+         </image>
+      </ImageView>
    </children>
 </AnchorPane>

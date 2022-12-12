@@ -24,6 +24,8 @@ public class FXML_ChooseWeatherController implements Initializable {
 
     private int result = 0;
     private String idresult = "";
+    private int results = 0;
+    private String idresults = "";
     
     @FXML
     private Button prev;
@@ -52,6 +54,14 @@ public class FXML_ChooseWeatherController implements Initializable {
 
     public String getIdresult() {
         return (idresult);
+    }
+    
+    public int getResults() {
+        return (results);
+    }
+
+    public String getIdresults() {
+        return (idresults);
     }
 
     @Override
@@ -106,14 +116,17 @@ public class FXML_ChooseWeatherController implements Initializable {
     @FXML
     private void choosec(ActionEvent event) {
         result = 1;
+        results = 1;
         int c = tweather.getSelectionModel().getSelectedCells().get(0).getRow();
         idresult = String.valueOf(tweather.getItems().get(c).getWeather_effect());
+        idresults = String.valueOf(tweather.getItems().get(c).getWeather_id());
         choose.getScene().getWindow().hide();
     }
 
     @FXML
     private void cancelc(ActionEvent event) {
         result = 0;
+        results = 0;
         cancel.getScene().getWindow().hide();
     }
 

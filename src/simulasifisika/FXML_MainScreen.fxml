@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.image.*?>
 <?import javafx.scene.shape.*?>
 <?import javafx.scene.text.*?>
 <?import java.lang.*?>
@@ -10,16 +11,21 @@
 
 <AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="simulasifisika.FXML_MainScreenController">
    <children>
-      <Rectangle arcHeight="5.0" arcWidth="5.0" height="400.0" stroke="BLACK" strokeType="INSIDE" width="600.0" />
-      <Label layoutX="82.0" layoutY="117.0" text="Walking (Physics) Simulator" textFill="WHITE">
-         <font>
-            <Font size="36.0" />
-         </font>
-      </Label>
-      <Label fx:id="begin" onMouseClicked="#beginc" prefHeight="400.0" prefWidth="600.0" text="                             -Click Here to Begin-" textFill="WHITE">
-         <font>
-            <Font size="24.0" />
-         </font>
-      </Label>
+      <ImageView fitHeight="423.0" fitWidth="600.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Image/metaltxt.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="53.0" fitWidth="465.0" layoutX="76.0" layoutY="127.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Image/Title.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="84.0" fitWidth="325.0" layoutX="138.0" layoutY="182.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Image/T2.png" />
+         </image>
+      </ImageView>
+      <Rectangle fx:id="begin" arcHeight="5.0" arcWidth="5.0" fill="#ffffff00" height="400.0" onMouseClicked="#beginc" stroke="BLACK" strokeType="INSIDE" width="600.0" />
    </children>
 </AnchorPane>

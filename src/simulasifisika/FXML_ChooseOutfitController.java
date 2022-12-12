@@ -24,6 +24,8 @@ public class FXML_ChooseOutfitController implements Initializable {
 
     private int result = 0;
     private String idresult = "";
+    private int results = 0;
+    private String idresults = "";
     
     @FXML
     private Button prev;
@@ -52,6 +54,14 @@ public class FXML_ChooseOutfitController implements Initializable {
 
     public String getIdresult() {
         return (idresult);
+    }
+    
+    public int getResults() {
+        return (results);
+    }
+
+    public String getIdresults() {
+        return (idresults);
     }
 
     @Override
@@ -100,14 +110,17 @@ public class FXML_ChooseOutfitController implements Initializable {
     @FXML
     private void choosec(ActionEvent event) {
         result = 1;
+        results = 1;
         int c = toutfit.getSelectionModel().getSelectedCells().get(0).getRow();
         idresult = String.valueOf(toutfit.getItems().get(c).getOutfit_effect());
+        idresults = String.valueOf(toutfit.getItems().get(c).getOutfit_id());
         choose.getScene().getWindow().hide();
     }
 
     @FXML
     private void cancelc(ActionEvent event) {
         result = 0;
+        results = 0;
         cancel.getScene().getWindow().hide();
     }
 

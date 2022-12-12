@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.image.*?>
 <?import javafx.scene.shape.*?>
 <?import javafx.scene.text.*?>
 <?import java.lang.*?>
@@ -62,14 +63,14 @@
       </Label>
       <Button fx:id="close" layoutX="526.0" layoutY="13.0" mnemonicParsing="false" onAction="#closec" text="Close [X]" />
       <TextField fx:id="speed" layoutX="226.0" layoutY="336.0" prefHeight="25.0" prefWidth="51.0" promptText="Speed" />
-      <Label layoutX="163.0" layoutY="8.0" text="Walking (Physics) Simulator" textFill="WHITE">
-         <font>
-            <Font size="23.0" />
-         </font>
-      </Label>
       <Button fx:id="gspeed" layoutX="145.0" layoutY="336.0" mnemonicParsing="false" onAction="#gspeedc" text="Get Speed" />
       <Label layoutX="279.0" layoutY="340.0" text="km/h" />
       <ToggleButton fx:id="atlet" layoutX="146.0" layoutY="301.0" mnemonicParsing="false" text="Atletic" />
       <Label layoutX="199.0" layoutY="304.0" text="&lt;- (Toggle to activate)" />
+      <ImageView fitHeight="76.0" fitWidth="392.0" layoutX="105.0" layoutY="2.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Image/Title.png" />
+         </image>
+      </ImageView>
    </children>
 </AnchorPane>

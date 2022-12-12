@@ -14,13 +14,14 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Label;
 import javafx.scene.input.MouseEvent;
+import javafx.scene.shape.Rectangle;
 import javafx.stage.Modality;
 import javafx.stage.Stage;
 
 public class FXML_MainScreenController implements Initializable {
 
     @FXML
-    private Label begin;
+    private Rectangle begin;
 
     @Override
     public void initialize(URL url, ResourceBundle rb) {
@@ -35,6 +36,7 @@ public class FXML_MainScreenController implements Initializable {
             Scene scene = new Scene(root);
             Stage stg = new Stage();
             stg.initModality(Modality.APPLICATION_MODAL);
+            begin.getScene().getWindow().hide();
             stg.setResizable(false);
             stg.setIconified(false);
             stg.setScene(scene);

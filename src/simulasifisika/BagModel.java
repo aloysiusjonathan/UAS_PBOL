@@ -7,6 +7,24 @@ package simulasifisika;
 public class BagModel {
     private String bag_id, bag_name;
     private int bag_weight;
+    String b;
+    float be;
+
+    public float getBe() {
+        return be;
+    }
+
+    public void setBe(float be) {
+        this.be = be;
+    }
+
+    public String getB() {
+        return b;
+    }
+
+    public void setB(String b) {
+        this.b = b;
+    }
 
     public String getBag_id() {
         return bag_id;

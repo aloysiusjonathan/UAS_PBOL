@@ -8,6 +8,24 @@ public class WeatherModel {
     private String weather_id, weather_name;
     private int wind_speed, wind_direction;
     private float weather_effect;
+    String w;
+    float we;
+
+    public float getWe() {
+        return we;
+    }
+
+    public void setWe(float we) {
+        this.we = we;
+    }
+
+    public String getW() {
+        return w;
+    }
+
+    public void setW(String w) {
+        this.w = w;
+    }
 
     public String getWeather_id() {
         return weather_id;

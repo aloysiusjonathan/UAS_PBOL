@@ -24,6 +24,8 @@ public class FXML_ChooseShoeController implements Initializable {
 
     private int result = 0;
     private String idresult = "";
+    private int results = 0;
+    private String idresults = "";
     
     @FXML
     private Button prev;
@@ -52,6 +54,14 @@ public class FXML_ChooseShoeController implements Initializable {
 
     public String getIdresult() {
         return (idresult);
+    }
+    
+    public int getResults() {
+        return (results);
+    }
+
+    public String getIdresults() {
+        return (idresults);
     }
 
     @Override
@@ -100,14 +110,17 @@ public class FXML_ChooseShoeController implements Initializable {
     @FXML
     private void choosec(ActionEvent event) {
         result = 1;
+        results = 1;
         int c = tshoe.getSelectionModel().getSelectedCells().get(0).getRow();
         idresult = String.valueOf(tshoe.getItems().get(c).getShoe_effect());
+        idresults = String.valueOf(tshoe.getItems().get(c).getShoe_id());
         choose.getScene().getWindow().hide();
     }
 
     @FXML
     private void cancelc(ActionEvent event) {
         result = 0;
+        results = 0;
         cancel.getScene().getWindow().hide();
     }
 

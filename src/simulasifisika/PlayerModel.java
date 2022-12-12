@@ -9,6 +9,32 @@ public class PlayerModel {
     private int Weight, Age, Hunger;
     private float Speed;
     private boolean Atletic;
+    String p;
+    float pfs, pfins;
+
+    public float getPfins() {
+        return pfins;
+    }
+
+    public void setPfins(float pfins) {
+        this.pfins = pfins;
+    }
+
+    public float getPfs() {
+        return pfs;
+    }
+
+    public void setPfs(float pfs) {
+        this.pfs = pfs;
+    }
+
+    public String getP() {
+        return p;
+    }
+
+    public void setP(String p) {
+        this.p = p;
+    }
 
     public String getPlayer_id() {
         return Player_id;

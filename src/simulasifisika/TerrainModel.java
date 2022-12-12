@@ -8,6 +8,24 @@ public class TerrainModel {
     private String terrain_id, terrain_name;
     private int slope_level, gravity;
     private float terrain_effect;
+    String t;
+    float te;
+
+    public float getTe() {
+        return te;
+    }
+
+    public void setTe(float te) {
+        this.te = te;
+    }
+
+    public String getT() {
+        return t;
+    }
+
+    public void setT(String t) {
+        this.t = t;
+    }
 
     public String getTerrain_id() {
         return terrain_id;

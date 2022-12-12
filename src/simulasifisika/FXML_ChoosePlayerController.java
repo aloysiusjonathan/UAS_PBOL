@@ -24,6 +24,10 @@ public class FXML_ChoosePlayerController implements Initializable {
 
     private int result = 0;
     private String idresult = "";
+    private int results = 0;
+    private String idresults = "";
+    private int resultss = 0;
+    private String idresultss = "";
     
     @FXML
     private ComboBox<String> field;
@@ -52,6 +56,22 @@ public class FXML_ChoosePlayerController implements Initializable {
 
     public String getIdresult() {
         return (idresult);
+    }
+    
+    public int getResults() {
+        return (results);
+    }
+
+    public String getIdresults() {
+        return (idresults);
+    }
+    
+    public int getResultss() {
+        return (resultss);
+    }
+
+    public String getIdresultss() {
+        return (idresultss);
     }
 
     @Override
@@ -118,14 +138,20 @@ public class FXML_ChoosePlayerController implements Initializable {
     @FXML
     private void choosec(ActionEvent event) {
         result = 1;
+        results = 1;
+        resultss = 1;
         int c = tplayer.getSelectionModel().getSelectedCells().get(0).getRow();
         idresult = String.valueOf(tplayer.getItems().get(c).getSpeed());
+        idresults = String.valueOf(tplayer.getItems().get(c).getPlayer_id());
+        idresultss = String.valueOf(tplayer.getItems().get(c).getPlayer_name());
         choose.getScene().getWindow().hide();
     }
 
     @FXML
     private void cancelc(ActionEvent event) {
         result = 0;
+        results = 0;
+        resultss = 0;
         cancel.getScene().getWindow().hide();
     }
 

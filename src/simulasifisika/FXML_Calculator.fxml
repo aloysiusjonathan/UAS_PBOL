@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.image.*?>
 <?import javafx.scene.shape.*?>
 <?import javafx.scene.text.*?>
 <?import java.lang.*?>
@@ -10,16 +11,27 @@
 
 <AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="simulasifisika.FXML_CalculatorController">
    <children>
+      <TextField fx:id="pfs" layoutY="150.0" prefHeight="25.0" prefWidth="99.0" promptText="Hidden PIN" />
+      <TextField fx:id="wep" layoutY="175.0" prefHeight="25.0" prefWidth="99.0" promptText="Hidden PIN" />
+      <TextField fx:id="wi" layoutY="100.0" prefHeight="25.0" prefWidth="99.0" promptText="Hidden PIN" />
+      <TextField fx:id="ti" layoutY="125.0" prefHeight="25.0" prefWidth="99.0" promptText="Hidden PIN" />
+      <TextField fx:id="bosi" layoutY="75.0" prefHeight="25.0" prefWidth="99.0" promptText="Hidden PIN" />
+      <TextField fx:id="pin" layoutY="50.0" prefHeight="25.0" prefWidth="99.0" promptText="Hidden PIN" />
       <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#686868" height="350.0" layoutY="50.0" stroke="TRANSPARENT" strokeType="INSIDE" width="600.0" />
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutY="224.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Image/walking.gif" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutY="224.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Image/pohon%20walking.gif" />
+         </image>
+      </ImageView>
       <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#c3c3c3" height="300.0" layoutX="100.0" layoutY="75.0" stroke="BLACK" strokeType="INSIDE" width="400.0" />
       <Rectangle arcHeight="5.0" arcWidth="5.0" height="50.0" stroke="BLACK" strokeType="INSIDE" width="600.0" />
       <Label layoutX="279.0" layoutY="340.0" text="km/h" />
       <Button fx:id="gspeed" layoutX="145.0" layoutY="336.0" mnemonicParsing="false" onAction="#gspeedc" text="Get Speed" />
-      <Label layoutX="163.0" layoutY="8.0" text="Walking (Physics) Simulator" textFill="WHITE">
-         <font>
-            <Font size="23.0" />
-         </font>
-      </Label>
       <TextField fx:id="speed" layoutX="226.0" layoutY="336.0" prefHeight="25.0" prefWidth="51.0" promptText="Speed" />
       <Button fx:id="close" layoutX="526.0" layoutY="13.0" mnemonicParsing="false" onAction="#closec" text="Close [X]" />
       <Label layoutX="172.0" layoutY="111.0" text="Player Speed :">
@@ -70,5 +82,11 @@
             <Font size="18.0" />
          </font>
       </Label>
+      <ImageView fitHeight="76.0" fitWidth="392.0" layoutX="105.0" layoutY="2.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Image/Title.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="report" layoutX="509.0" layoutY="336.0" mnemonicParsing="false" onAction="#reportc" text="View Report" />
    </children>
 </AnchorPane>
